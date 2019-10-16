@@ -1,4 +1,5 @@
-## Welcome to GitHub Pages
+## MedU website is coming
+### If you have any concern, please sent an email to [medu.help@gmail.com](mailto:medu.help@gmail.com)
 
 You can use the [editor on GitHub](https://github.com/meduapp/meduapp.github.io/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
 
