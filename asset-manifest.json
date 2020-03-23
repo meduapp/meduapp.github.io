@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/meduapp.github.io/static/css/main.6568278f.chunk.css",
+    "main.js": "/meduapp.github.io/static/js/main.a9bc859b.chunk.js",
+    "main.js.map": "/meduapp.github.io/static/js/main.a9bc859b.chunk.js.map",
+    "runtime-main.js": "/meduapp.github.io/static/js/runtime-main.b2baeb5f.js",
+    "runtime-main.js.map": "/meduapp.github.io/static/js/runtime-main.b2baeb5f.js.map",
+    "static/css/2.2fbe55bd.chunk.css": "/meduapp.github.io/static/css/2.2fbe55bd.chunk.css",
+    "static/js/2.1bc1a4bb.chunk.js": "/meduapp.github.io/static/js/2.1bc1a4bb.chunk.js",
+    "static/js/2.1bc1a4bb.chunk.js.map": "/meduapp.github.io/static/js/2.1bc1a4bb.chunk.js.map",
+    "index.html": "/meduapp.github.io/index.html",
+    "precache-manifest.5bb120e5dc8e86756ca552746a771b8e.js": "/meduapp.github.io/precache-manifest.5bb120e5dc8e86756ca552746a771b8e.js",
+    "service-worker.js": "/meduapp.github.io/service-worker.js",
+    "static/css/2.2fbe55bd.chunk.css.map": "/meduapp.github.io/static/css/2.2fbe55bd.chunk.css.map",
+    "static/css/main.6568278f.chunk.css.map": "/meduapp.github.io/static/css/main.6568278f.chunk.css.map",
+    "static/js/2.1bc1a4bb.chunk.js.LICENSE.txt": "/meduapp.github.io/static/js/2.1bc1a4bb.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.b2baeb5f.js",
+    "static/css/2.2fbe55bd.chunk.css",
+    "static/js/2.1bc1a4bb.chunk.js",
+    "static/css/main.6568278f.chunk.css",
+    "static/js/main.a9bc859b.chunk.js"
+  ]
+}
