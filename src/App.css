@@ -1,0 +1,54 @@
+@import '~antd/dist/antd.css';
+@import url('https://fonts.googleapis.com/css?family=Mitr&display=swap');
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Mitr', sans-serif;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-white {
+  color: #f0f0f0 !important;
+}
+
+.center {
+  margin: 0 auto;
+}
+
+.mt-1 {
+  margin-top: 1rem;
+}
+
+.mt-2 {
+  margin-top: 2rem;
+}
+
+.mt-3 {
+  margin-top: 3rem;
+}
+
+.px-1 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.px-2 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.px-3 {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.mx-2 {
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+.float-right {
+  float: right;
+}
