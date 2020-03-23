@@ -12,9 +12,9 @@ const App = () => {
 		alert('Success');
 		document.location.href =
 			'mailto:medu.help@gmail.com?subject=' +
-			encodeURIComponent(values.email) +
+			encodeURIComponent(values.topic) +
 			'&body=' +
-			encodeURIComponent(values.detail);
+			encodeURIComponent(`${values.detail}`);
 	};
 
 	const onFinishFailed = errorInfo => {
@@ -34,7 +34,7 @@ const App = () => {
 						กรุณากรอกรายละเอียดของท่านเพื่อติดต่อกลับ
 					</Title>
 					<Form
-          className="mx-2"
+						className='mx-2'
 						labelCol={{ span: 4 }}
 						wrapperCol={{ span: 20 }}
 						name='basic'
@@ -43,9 +43,9 @@ const App = () => {
 						onFinishFailed={onFinishFailed}
 					>
 						<Form.Item
-							label='อีเมล์'
-							name='email'
-							rules={[{ required: true, message: 'กรุณากรอกอีเมล์!' }]}
+							label='หัวข้อ'
+							name='topic'
+							rules={[{ required: true, message: 'กรุณากรอกหัวข้อ!' }]}
 						>
 							<Input />
 						</Form.Item>
@@ -61,7 +61,7 @@ const App = () => {
 						</Form.Item>
 
 						<Form.Item wrapperCol={24}>
-							<Button className="float-right" type='primary' htmlType='submit'>
+							<Button className='float-right' type='primary' htmlType='submit'>
 								Submit
 							</Button>
 						</Form.Item>
