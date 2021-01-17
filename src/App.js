@@ -1,24 +1,38 @@
-import React from 'react';
-import { Layout, Form, Input, Button, Typography } from 'antd';
 import './App.css';
+
+import { Button, Form, Input, Layout, Typography } from 'antd';
+
+import React from 'react';
 
 const { Header, Footer, Content } = Layout;
 const { TextArea } = Input;
 const { Title } = Typography;
 
 const App = () => {
-	const onFinish = values => {
-		console.log(values);
-		alert('Success');
-		document.location.href =
-			'mailto:medu.help@gmail.com?subject=' +
-			encodeURIComponent(values.topic) +
-			'&body=' +
-			encodeURIComponent(`${values.detail}`);
+	const onFinish = async (values) => {
+		const data = {
+			email: values.email,
+			subject: values.topic,
+			description: values.detail,
+		};
+		const response = await fetch('https://medu.app/v2/api/support/request', {
+			method: 'POST',
+			headers: {
+				'Content-Type': 'application/json',
+			},
+			mode: 'cors',
+			body: JSON.stringify(data),
+		});
+		
+		if (response.ok) {
+			alert('สำเร็จ! คำร้องของท่านได้รับการบันทึกไว้ในระบบแล้ว.');
+		} else {
+			alert('พบข้อผิดพลาด กรุณาลองอีกครั้งในภายหลัง')
+		}
 	};
 
-	const onFinishFailed = errorInfo => {
-		alert('Failed');
+	const onFinishFailed = (errorInfo) => {
+		alert('กรุณากรอกข้อมูลให้ถูกต้อง และครบถ้วน');
 	};
 
 	return (
@@ -43,6 +57,19 @@ const App = () => {
 						onFinishFailed={onFinishFailed}
 					>
 						<Form.Item
+							label='อีเมล'
+							name='email'
+							rules={[
+								{
+									required: true,
+									message: 'กรุณากรอกอีเมลให้ถูกต้อง!',
+									type: 'email',
+								},
+							]}
+						>
+							<Input />
+						</Form.Item>
+						<Form.Item
 							label='หัวข้อ'
 							name='topic'
 							rules={[{ required: true, message: 'กรุณากรอกหัวข้อ!' }]}
@@ -54,7 +81,7 @@ const App = () => {
 							label='รายละเอียด'
 							name='detail'
 							rules={[
-								{ required: true, message: 'กรุณากรอกรายละเอียดของท่าน!' }
+								{ required: true, message: 'กรุณากรอกรายละเอียดของท่าน!' },
 							]}
 						>
 							<TextArea rows={4} />
