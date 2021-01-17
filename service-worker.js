@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/meduapp.github.io/precache-manifest.5bb120e5dc8e86756ca552746a771b8e.js"
+  "/meduapp.github.io/precache-manifest.424f441c1e06b7e4b85d6e3ed9b59efa.js"
 );
 
 self.addEventListener('message', (event) => {
